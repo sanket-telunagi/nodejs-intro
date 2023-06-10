@@ -390,15 +390,15 @@ console.log(buffer.toString()); // only displays 6 characters as the buffer is c
 
     - writing file<br>
 
-    ```js
-    fs.writeFile("./greet_async.txt", content, {flag : "a"}, (err) => {
-    if (err) {
-        console.log(err);
-    } else {
-        console.log("Writing complete.");
-    }
-    })
-    ```
+        ```js
+        fs.writeFile("./greet_async.txt", content, {flag : "a"}, (err) => {
+        if (err) {
+            console.log(err);
+        } else {
+            console.log("Writing complete.");
+        }
+        })
+        ```
     ```js
     fs.writeFileSync("./greet_sync.txt", content, {flag : "a"});
     console.log(fileContent);
