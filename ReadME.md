@@ -349,6 +349,7 @@ console.log(buffer.toString()); // only displays 6 characters as the buffer is c
 - "fs/promises" provies promise base implementations for better performance 
 - functions are 
     - Reading file 
+
     ```js
     const fileContent = fs.readFileSync("./hello.txt", "utf-8") ;
     console.log(fileContent) ;
@@ -364,6 +365,7 @@ console.log(buffer.toString()); // only displays 6 characters as the buffer is c
     ```
 
     - Promised based functions
+
     ```js
     async function readFile () {
         try {
@@ -386,7 +388,7 @@ console.log(buffer.toString()); // only displays 6 characters as the buffer is c
     }) // error while returning
     ```
 
-    - writing file
+    - writing file<br>
 
     ```js
     fs.writeFile("./greet_async.txt", content, {flag : "a"}, (err) => {
@@ -429,16 +431,16 @@ readableSTream.on("data", (dataChunk) => {
 
 
 ### Web Frameworks:
-        - frameworks abstracts the lower level code allowing you to focus on the requirements than the code
+- frameworks abstracts the lower level code allowing you to focus on the requirements than the code
 
 ### Asuncrnous feature of javascript : 
-    - javascript is blocking by default
-    - but to acheive the asynchrnous power it uses libuv
+- javascript is blocking by default
+- but to acheive the asynchrnous power it uses libuv
 
 ### Libuv 
-    - a crossplatform opensource library written in c language 
-    - handle synchronous no-blocking operation in node.js
-    - it is dont by using : 
-        - Thread Pool
-        - Event Loop
+- a crossplatform opensource library written in c language 
+- handle synchronous no-blocking operation in node.js
+- it is dont by using : 
+    - Thread Pool
+    - Event Loop
 
